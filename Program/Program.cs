@@ -31,14 +31,41 @@ namespace Lab2 {
             return c;
 
         }
-/*
-        public static bool operator ==(Array a, Array b) {
-            
+
+        public static bool operator false(Array a) {
+            foreach(int item in a.array) {
+                if(item < 0) {
+                    return false;
+                }
+            }
+            return true;
         }
 
-*/
+        public static bool operator true(Array a) {
+            foreach(int item in a.array) {
+                if(item < 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
 
     } // Array class end
+
+    public static class SymbolChecker {
+        
+        public static bool hasSymbol(this Array a, char symbol) {
+            string arrayString = String.Join("", a.array);
+            foreach (char item in arrayString) {
+                if(item == symbol) 
+                    return true;
+            }
+            return false;
+        }
+
+
+    } // SymbolChecker extention end
 
     public class Program {
 
@@ -57,6 +84,9 @@ namespace Lab2 {
             foreach (var item in a1.array) {
                 Console.WriteLine(item);
             }
+
+            Console.WriteLine(a1.hasSymbol('6'));
+            Console.WriteLine(a1.hasSymbol('4'));
 
         }
 
