@@ -27,11 +27,11 @@ namespace lab2_part2 {
 
     }
 
-    public sealed class Computer: Tech {
+    public class Computer: Tech {
         
-        string CPU {set; get;} = "None";
-        string GPU {set; get;} = "None";
-        string OS {set; get;} = "None";
+        protected string CPU {set; get;} = "None";
+        protected string GPU {set; get;} = "None";
+        protected string OS {set; get;} = "None";
 
         public new void PrintInfo() {
              
@@ -42,23 +42,42 @@ namespace lab2_part2 {
 
     }
 
-    public sealed class Tablet: Tech {
+    public sealed class Tablet: Computer {
+
+        bool hasStylus {set; get;} = false;
 
         public new void PrintInfo() {
 
+            base.PrintInfo();
+            Console.WriteLine("Has Stylus: {0}", hasStylus);
         }
+
 
     }
 
 
-    public abstract class PrintingTool : Tech {
+    public class PrintingTool : Tech {
+        
+        protected bool isMulticolour {set; get;} = false;
 
         public new void PrintInfo() {
+            
+            base.PrintInfo();
+            Console.WriteLine("Supports multicolour: {0}", isMulticolour);
 
         }
+
     }
 
     public sealed class Scanner : PrintingTool {
+
+        string scannerType {set; get;} = "None";
+
+        public new void PrintInfo() {
+
+            base.PrintInfo();
+            Console.WriteLine("Scanner Type: {0}", scannerType);
+        }
 
     }
 
@@ -68,8 +87,17 @@ namespace lab2_part2 {
         public static void Main(string[] args) {
 
             Computer pc = new Computer();
+            Tablet tab = new Tablet();
+            Scanner scammer = new Scanner();
 
             pc.PrintInfo();
+            Console.Write('\n');
+
+            tab.PrintInfo();
+            Console.Write('\n');
+
+            scammer.PrintInfo();
+            Console.Write('\n');
             
         }
 
