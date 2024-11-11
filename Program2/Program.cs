@@ -4,11 +4,8 @@ namespace lab2_part2 {
     
     public abstract class IProduct
     {
+        protected string type {set; get;} = "Nan";
         
-        public virtual void PrintInfo() {
-
-            Console.WriteLine("Default info");
-        }
         
     }
 
@@ -19,10 +16,9 @@ namespace lab2_part2 {
         protected string name {set; get;} = "None";
         protected int price {set; get;} = 0;
 
-        public override void PrintInfo() {
-            
-            Console.WriteLine("Vendor: {0}\nName: {1}\nPrice: {2}",
-                    vendor, name, price);
+        public Tech() {
+
+            type = "Technology";
         }
 
     }
@@ -33,11 +29,9 @@ namespace lab2_part2 {
         protected string GPU {set; get;} = "None";
         protected string OS {set; get;} = "None";
 
-        public new void PrintInfo() {
-             
-            base.PrintInfo();
-            Console.WriteLine("CPU: {0}\nGPU: {1}\nOS: {2}",
-                    CPU, GPU, OS);
+        public Computer() {
+
+            type = "Computer";
         }
 
     }
@@ -46,12 +40,10 @@ namespace lab2_part2 {
 
         bool hasStylus {set; get;} = false;
 
-        public new void PrintInfo() {
+        public Tablet() {
 
-            base.PrintInfo();
-            Console.WriteLine("Has Stylus: {0}", hasStylus);
+            type = "Tablet";
         }
-
 
     }
 
@@ -60,11 +52,9 @@ namespace lab2_part2 {
         
         protected bool isMulticolour {set; get;} = false;
 
-        public new void PrintInfo() {
-            
-            base.PrintInfo();
-            Console.WriteLine("Supports multicolour: {0}", isMulticolour);
+        public PrintingTool() {
 
+            type = "Printing Tool";
         }
 
     }
@@ -73,10 +63,9 @@ namespace lab2_part2 {
 
         string scannerType {set; get;} = "None";
 
-        public new void PrintInfo() {
+        public Scanner() {
 
-            base.PrintInfo();
-            Console.WriteLine("Scanner Type: {0}", scannerType);
+            type = "Scanner";
         }
 
     }
@@ -90,14 +79,6 @@ namespace lab2_part2 {
             Tablet tab = new Tablet();
             Scanner scammer = new Scanner();
 
-            pc.PrintInfo();
-            Console.Write('\n');
-
-            tab.PrintInfo();
-            Console.Write('\n');
-
-            scammer.PrintInfo();
-            Console.Write('\n');
             
         }
 
