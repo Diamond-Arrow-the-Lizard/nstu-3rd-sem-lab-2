@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jDxjckWCdNh1PRQAKXLz5yxN9aFyBEvVTzRsR+gNfpR4KwNcqjIsMj4NWfIXlwTGBuIZ2vzwiLe30Awe1AEr8w==",
+  "success": true,
+  "projectFilePath": "/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program2/Program2.csproj",
+  "expectedPackageFiles": [
+    "/home/d-arrow/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.10/microsoft.aspnetcore.app.ref.8.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}
