@@ -32,6 +32,36 @@ namespace Lab2 {
 
         }
 
+        public static bool operator !=(Array a, Array b) {
+            if(a.array.Length != b.array.Length) return true;
+            
+            for(int i = 0; i < a.array.Length; i++) {
+                if(a.array[i] != b.array[i]) return true;
+            }
+
+            return false;
+        }
+
+        public static bool operator ==(Array a, Array b) {
+            if(a.array.Length != b.array.Length) return false;
+            
+            for(int i = 0; i < a.array.Length; i++) {
+                if(a.array[i] != b.array[i]) return false;
+            }
+
+            return true;
+        }
+
+        public static bool operator <(Array a, Array b) {
+            if(a.array.Length < b.array.Length) return true;
+            return false;
+        }
+
+        public static bool operator >(Array a, Array b) {
+            if(a.array.Length > b.array.Length) return true;
+            return false;
+        }
+
         public static bool operator false(Array a) {
             foreach(int item in a.array) {
                 if(item < 0) {
@@ -48,6 +78,11 @@ namespace Lab2 {
                 }
             }
             return true;
+        }
+
+        
+        public static explicit operator int(Array a) {
+            return a.array.Length;
         }
 
 
@@ -90,6 +125,9 @@ namespace Lab2 {
             Array a3 = new Array();
             a3.array = new int[]{-2, 3, 4, -5, 6};
 
+            Array a4 = new Array();
+            a4.array = new int[]{1, 2, 3, 4, 5};
+
             a1 = a2*a3; 
 
             foreach (var item in a1.array) {
@@ -103,6 +141,11 @@ namespace Lab2 {
             foreach (var item in a1.array) {
                 Console.WriteLine(item);
             }
+
+            Console.WriteLine("Array size: " + (int)a1);
+            Console.WriteLine(a2==a4);
+            Console.WriteLine(a2==a3);
+            Console.WriteLine(a1>a3);
 
         }
 
