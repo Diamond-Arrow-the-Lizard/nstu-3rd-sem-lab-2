@@ -4,10 +4,10 @@ namespace lab2_part2 {
 
     public abstract class Product {
 
-        protected string type {set; get;} = "None";
+        public string Type {set; get;} = "None";
 
         private bool _is_broken = false;
-        protected bool isBroken {
+        public bool isBroken {
             set {
                 _is_broken = value;
             }
@@ -26,34 +26,44 @@ namespace lab2_part2 {
 
     public class Tech : Product {
 
-        protected string vendor {set; get;} = "None";
-        protected string name {set; get;} = "None";
-        protected int price {set; get;} = 0;
+        public string Vendor {set; get;} = "None";
+        public string Name {set; get;} = "None";
+        public int Price {set; get;} = 0;
 
         public Tech() {
 
-            type = "Tech";
+            Type = "Tech";
         }
 
         public override bool breakProduct() {
-            Console.WriteLine($"You broke {name}. Here goes your {price} rubles...");
+            if(isBroken == true) { 
+                Console.WriteLine("It's already broken!");
+                return isBroken;
+            }
+
+            Console.WriteLine($"You broke {Name}. Here goes your {Price} rubles...");
             isBroken = true;
             return isBroken;
         }
 
         public override bool repairProduct() {
-            Console.WriteLine($"{name} was repaired and is ready to wo...");;
+            if(isBroken == false) { 
+                Console.WriteLine("It's fine, no need for a repair");
+                return isBroken;
+            }
+
+            Console.WriteLine($"{Name} was repaired and is ready to work!");
             isBroken = false;
             return isBroken;
         }
 
         public override string ToString() {
             if (isBroken == true) {
-                return "It's broken!";
+                return "It's broken!\n";
             }
 
-            string formattedOutput = $"Product type: {type}\nVendor: {vendor}\nProduct name: {name}\nPrice: {price}";
-            return formattedOutput;
+            string formattedOutput = $"Product Type: {Type}\nVendor: {Vendor}\nProduct Name: {Name}\nPrice: {Price}";
+            return formattedOutput + '\n';
 
         }
 
@@ -61,42 +71,52 @@ namespace lab2_part2 {
 
     public class Computer: Tech {
 
-        protected string CPU {set; get;} = "None";
-        protected string GPU {set; get;} = "None";
-        protected string OS {set; get;} = "None";
+        public string CPU {set; get;} = "None";
+        public string GPU {set; get;} = "None";
+        public string OS {set; get;} = "None";
 
         public Computer() {
 
-            type = "Computer";
+            Type = "Computer";
         }
 
         public override bool breakProduct() {
-            Console.WriteLine($"You broke {name}. All the money for {CPU} and {GPU} for nothing...");; 
+            if(isBroken == true) { 
+                Console.WriteLine("It's already broken!");
+                return isBroken;
+            }
+
+            Console.WriteLine($"You broke {Name}. All the money for {CPU} and {GPU} for nothing..."); 
             isBroken = true;
             return isBroken;
         }
 
         public override bool repairProduct() {
-            Console.WriteLine($"{name} was repaired. It only cost you a kidn...");;
+            if(isBroken == false) { 
+                Console.WriteLine("It's fine, no need for a repair");
+                return isBroken;
+            }
+
+            Console.WriteLine($"{Name} was repaired. It only cost you a kidney!");
             isBroken = false;
             return isBroken;
         }
 
         public override string ToString() {
             if (isBroken == true) {
-                return "It's broken!";
+                return "It's broken!\n";
             }
 
-            string formattedOutput = $"Product type: {type}\nVendor: {vendor}\nProduct name: {name}\nPrice: {price}";
+            string formattedOutput = $"Product Type: {Type}\nVendor: {Vendor}\nProduct Name: {Name}\nPrice: {Price}";
             formattedOutput += $"\nCPU: {CPU}\nGPU: {GPU}\nOS: {OS}";
-            return formattedOutput;
+            return formattedOutput + '\n';
 
         }
 
     }
 
     public sealed class Tablet: Computer {
-        
+
         private bool _has_stylus = false;
         bool hasStylus {
             set {
@@ -107,30 +127,40 @@ namespace lab2_part2 {
 
         public Tablet() {
 
-            type = "Tablet";
+            Type = "Tablet";
         }
 
         public override bool breakProduct() {
-            Console.WriteLine($"You broke {name}. No more YouTube for you...");
+            if(isBroken == true) { 
+                Console.WriteLine("It's already broken!");
+                return isBroken;
+            }
+
+            Console.WriteLine($"You broke {Name}. No more YouTube for you...");
             isBroken = true;
             return isBroken;
         }
 
         public override bool repairProduct() {
-            Console.WriteLine($"{name} was repaired and is ready to destroy your eyesig...");;
+            if(isBroken == false) { 
+                Console.WriteLine("It's fine, no need for a repair");
+                return isBroken;
+            }
+
+            Console.WriteLine($"{Name} was repaired and is ready to destroy your eyesight...");
             isBroken = false;
             return isBroken;
         }
 
         public override string ToString() {
             if (isBroken == true) {
-                return "It's broken!";
+                return "It's broken!\n";
             }
 
-            string formattedOutput = $"Product type: {type}\nVendor: {vendor}\nProduct name: {name}\nPrice: {price}";
+            string formattedOutput = $"Product Type: {Type}\nVendor: {Vendor}\nProduct Name: {Name}\nPrice: {Price}";
             formattedOutput += $"\nCPU: {CPU}\nGPU: {GPU}\nOS: {OS}";
             formattedOutput += $"\nHas Stylus support: {hasStylus}";
-            return formattedOutput;
+            return formattedOutput + '\n';
 
         }
 
@@ -138,9 +168,9 @@ namespace lab2_part2 {
 
 
     public class PrintingTool : Tech {
-        
+
         private bool _is_multicolour = false;
-        protected bool isMulticolour {
+        public bool isMulticolour {
             set {
                 _is_multicolour = value;
             } 
@@ -149,14 +179,19 @@ namespace lab2_part2 {
 
         public PrintingTool() {
 
-            type = "Printing Tool";
+            Type = "Printing Tool";
         }
 
         public override bool breakProduct() {
+            if(isBroken == true) { 
+                Console.WriteLine("It's already broken!");
+                return isBroken;
+            }
+
             if(isMulticolour == false) {
-                Console.WriteLine($"You broke {name}. Now you'll have to pay to print things...");
+                Console.WriteLine($"You broke {Name}. Now you'll have to pay to print things...");
             } else {
-                Console.WriteLine($"You broke {name}. And it was multicolour! Repair will ruin you...");
+                Console.WriteLine($"You broke {Name}. And it was multicolour! Repair will ruin you...");
             }
 
             isBroken = true;
@@ -164,10 +199,15 @@ namespace lab2_part2 {
         }
 
         public override bool repairProduct() {
+            if(isBroken == false) { 
+                Console.WriteLine("It's fine, no need for a repair");
+                return isBroken;
+            }
+
             if(isMulticolour == false) {
-                Console.WriteLine($"{name} was repaired and is ready to print your pape...");;
+                Console.WriteLine($"{Name} was repaired and is ready to print your papers...");
             } else {
-                Console.WriteLine($"{name} was repaired and is ready to pring your jpe...");;
+                Console.WriteLine($"{Name} was repaired and is ready to pring your jpegs");
             }
 
             isBroken = false;
@@ -176,12 +216,12 @@ namespace lab2_part2 {
 
         public override string ToString() {
             if (isBroken == true) {
-                return "It's broken!";
+                return "It's broken!\n";
             }
 
-            string formattedOutput = $"Product type: {type}\nVendor: {vendor}\nProduct name: {name}\nPrice: {price}";
+            string formattedOutput = $"Product Type: {Type}\nVendor: {Vendor}\nProduct Name: {Name}\nPrice: {Price}";
             formattedOutput += $"\nCan print multicolour: {isMulticolour}";
-            return formattedOutput;
+            return formattedOutput + '\n';
 
         }
 
@@ -193,30 +233,40 @@ namespace lab2_part2 {
 
         public Scanner() {
 
-            type = "Scanner";
+            Type = "Scanner";
         }
 
         public override bool breakProduct() {
-            Console.WriteLine($"You broke {name}. Here goes your {price}...");;
+            if(isBroken == true) { 
+                Console.WriteLine("It's already broken!");
+                return isBroken;
+            }
+
+            Console.WriteLine($"You broke {Name}. Here goes your {Price}...");
             isBroken = true;
             return isBroken;
         }
 
         public override bool repairProduct() {
-            Console.WriteLine($"{name} was repaired and is ready to wo...");;;
+            if(isBroken == false) { 
+                Console.WriteLine("It's fine, no need for a repair");
+                return isBroken;
+            }
+
+            Console.WriteLine($"{Name} was repaired and is ready to work");
             isBroken = false;
             return isBroken;
         }
 
         public override string ToString() {
             if (isBroken == true) {
-                return "It's broken!";
+                return "It's broken!\n";
             }
 
-            string formattedOutput = $"Product type: {type}\nVendor: {vendor}\nProduct name: {name}\nPrice: {price}";
+            string formattedOutput = $"Product Type: {Type}\nVendor: {Vendor}\nProduct Name: {Name}\nPrice: {Price}";
             formattedOutput += $"\nCan print multicolour: {isMulticolour}";
             formattedOutput += $"\nScanner Type: {scannerType}";
-            return formattedOutput;
+            return formattedOutput + '\n';
 
         }
 
@@ -227,8 +277,41 @@ namespace lab2_part2 {
 
         public static void Main(string[] args) {
 
-        List<Tech> techList = new List<Tech>();
+            List<Tech> techList = new List<Tech>();
 
+            Scanner scammer = new Scanner() {
+                Vendor = "Ricoh",
+                Name = "HP 150",
+                Price = 2300000
+            };
+
+            Computer coolPC = new Computer() {
+                Vendor = "DNS",
+                CPU = "AMD",
+                GPU = "AMD Radeon",
+                OS = "Debian 12",
+                Price = 4300000
+            };
+
+            Tablet iPad = new Tablet() {
+                Vendor = "Apple",
+                Name = "iPad",
+                OS = "iOS",
+                Price = 1000000000
+            };
+
+            techList.Add(scammer);
+            techList.Add(coolPC);
+            techList.Add(iPad);
+
+            iPad.breakProduct();
+            iPad.repairProduct();
+            iPad.repairProduct();
+
+            coolPC.breakProduct();
+
+            foreach(var i in techList)
+                Console.WriteLine(i);
 
         }
 
