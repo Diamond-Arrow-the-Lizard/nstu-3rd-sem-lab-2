@@ -6,7 +6,20 @@ namespace lab2_part2 {
 
         protected string type {set; get;} = "None";
 
+        private bool _is_broken = false;
+        protected bool isBroken {
+            set {
+                _is_broken = value;
+            }
+
+            get => _is_broken;
+
+        }
+
         public override abstract string ToString();
+
+        public abstract bool breakProduct();
+        public abstract bool repairProduct();
 
     }
 
@@ -22,7 +35,22 @@ namespace lab2_part2 {
             type = "Tech";
         }
 
+        public override bool breakProduct() {
+            Console.WriteLine($"You broke {name}. Here goes your {price} rubles...");
+            isBroken = true;
+            return isBroken;
+        }
+
+        public override bool repairProduct() {
+            Console.WriteLine($"{name} was repaired and is ready to wo...");;
+            isBroken = false;
+            return isBroken;
+        }
+
         public override string ToString() {
+            if (isBroken == true) {
+                return "It's broken!";
+            }
 
             string formattedOutput = $"Product type: {type}\nVendor: {vendor}\nProduct name: {name}\nPrice: {price}";
             return formattedOutput;
@@ -42,7 +70,22 @@ namespace lab2_part2 {
             type = "Computer";
         }
 
+        public override bool breakProduct() {
+            Console.WriteLine($"You broke {name}. All the money for {CPU} and {GPU} for nothing...");; 
+            isBroken = true;
+            return isBroken;
+        }
+
+        public override bool repairProduct() {
+            Console.WriteLine($"{name} was repaired. It only cost you a kidn...");;
+            isBroken = false;
+            return isBroken;
+        }
+
         public override string ToString() {
+            if (isBroken == true) {
+                return "It's broken!";
+            }
 
             string formattedOutput = $"Product type: {type}\nVendor: {vendor}\nProduct name: {name}\nPrice: {price}";
             formattedOutput += $"\nCPU: {CPU}\nGPU: {GPU}\nOS: {OS}";
@@ -53,15 +96,36 @@ namespace lab2_part2 {
     }
 
     public sealed class Tablet: Computer {
-
-        bool hasStylus {set; get;} = false;
+        
+        private bool _has_stylus = false;
+        bool hasStylus {
+            set {
+                _has_stylus = value;
+            }
+            get => _has_stylus;
+        } 
 
         public Tablet() {
 
             type = "Tablet";
         }
 
+        public override bool breakProduct() {
+            Console.WriteLine($"You broke {name}. No more YouTube for you...");
+            isBroken = true;
+            return isBroken;
+        }
+
+        public override bool repairProduct() {
+            Console.WriteLine($"{name} was repaired and is ready to destroy your eyesig...");;
+            isBroken = false;
+            return isBroken;
+        }
+
         public override string ToString() {
+            if (isBroken == true) {
+                return "It's broken!";
+            }
 
             string formattedOutput = $"Product type: {type}\nVendor: {vendor}\nProduct name: {name}\nPrice: {price}";
             formattedOutput += $"\nCPU: {CPU}\nGPU: {GPU}\nOS: {OS}";
@@ -74,15 +138,46 @@ namespace lab2_part2 {
 
 
     public class PrintingTool : Tech {
-
-        protected bool isMulticolour {set; get;} = false;
+        
+        private bool _is_multicolour = false;
+        protected bool isMulticolour {
+            set {
+                _is_multicolour = value;
+            } 
+            get => _is_multicolour;
+        } 
 
         public PrintingTool() {
 
             type = "Printing Tool";
         }
 
+        public override bool breakProduct() {
+            if(isMulticolour == false) {
+                Console.WriteLine($"You broke {name}. Now you'll have to pay to print things...");
+            } else {
+                Console.WriteLine($"You broke {name}. And it was multicolour! Repair will ruin you...");
+            }
+
+            isBroken = true;
+            return isBroken;
+        }
+
+        public override bool repairProduct() {
+            if(isMulticolour == false) {
+                Console.WriteLine($"{name} was repaired and is ready to print your pape...");;
+            } else {
+                Console.WriteLine($"{name} was repaired and is ready to pring your jpe...");;
+            }
+
+            isBroken = false;
+            return isBroken;
+        }
+
         public override string ToString() {
+            if (isBroken == true) {
+                return "It's broken!";
+            }
 
             string formattedOutput = $"Product type: {type}\nVendor: {vendor}\nProduct name: {name}\nPrice: {price}";
             formattedOutput += $"\nCan print multicolour: {isMulticolour}";
@@ -101,7 +196,22 @@ namespace lab2_part2 {
             type = "Scanner";
         }
 
+        public override bool breakProduct() {
+            Console.WriteLine($"You broke {name}. Here goes your {price}...");;
+            isBroken = true;
+            return isBroken;
+        }
+
+        public override bool repairProduct() {
+            Console.WriteLine($"{name} was repaired and is ready to wo...");;;
+            isBroken = false;
+            return isBroken;
+        }
+
         public override string ToString() {
+            if (isBroken == true) {
+                return "It's broken!";
+            }
 
             string formattedOutput = $"Product type: {type}\nVendor: {vendor}\nProduct name: {name}\nPrice: {price}";
             formattedOutput += $"\nCan print multicolour: {isMulticolour}";
@@ -117,11 +227,7 @@ namespace lab2_part2 {
 
         public static void Main(string[] args) {
 
-            Computer pc = new Computer();
-            Tablet tab = new Tablet();
-            Scanner scammer = new Scanner();
-
-            Console.WriteLine($"{pc}\n\n{tab}\n\n{scammer}");
+        List<Tech> techList = new List<Tech>();
 
 
         }
