@@ -1,6 +1,5 @@
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/obj/Debug/net8.0/Program.csproj.AssemblyReference.cache
 /home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/obj/Debug/net8.0/Program.GeneratedMSBuildEditorConfig.editorconfig
-/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/obj/Debug/net8.0/Program.AssemblyInfoInputs.cache
-/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/obj/Debug/net8.0/Program.AssemblyInfo.cs
 /home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/obj/Debug/net8.0/Program.csproj.CoreCompileInputs.cache
 /home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/obj/Debug/net8.0/Program.sourcelink.json
 /home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/bin/Debug/net8.0/Program
@@ -8,6 +7,9 @@
 /home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/bin/Debug/net8.0/Program.runtimeconfig.json
 /home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/bin/Debug/net8.0/Program.dll
 /home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/bin/Debug/net8.0/Program.pdb
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/bin/Debug/net8.0/ArrayClass.dll
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/bin/Debug/net8.0/ArrayClass.pdb
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/obj/Debug/net8.0/Program.csproj.CopyComplete
 /home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/obj/Debug/net8.0/Program.dll
 /home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/obj/Debug/net8.0/refint/Program.dll
 /home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/obj/Debug/net8.0/Program.pdb

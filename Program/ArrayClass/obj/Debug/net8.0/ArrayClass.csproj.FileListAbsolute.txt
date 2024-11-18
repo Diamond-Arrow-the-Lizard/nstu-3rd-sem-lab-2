@@ -1,0 +1,10 @@
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/ArrayClass/bin/Debug/net8.0/ArrayClass.deps.json
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/ArrayClass/bin/Debug/net8.0/ArrayClass.dll
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/ArrayClass/bin/Debug/net8.0/ArrayClass.pdb
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/ArrayClass/obj/Debug/net8.0/ArrayClass.GeneratedMSBuildEditorConfig.editorconfig
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/ArrayClass/obj/Debug/net8.0/ArrayClass.csproj.CoreCompileInputs.cache
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/ArrayClass/obj/Debug/net8.0/ArrayClass.sourcelink.json
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/ArrayClass/obj/Debug/net8.0/ArrayClass.dll
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/ArrayClass/obj/Debug/net8.0/refint/ArrayClass.dll
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/ArrayClass/obj/Debug/net8.0/ArrayClass.pdb
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/ArrayClass/obj/Debug/net8.0/ref/ArrayClass.dll
