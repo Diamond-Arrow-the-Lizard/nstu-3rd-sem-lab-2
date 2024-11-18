@@ -1,5 +1,7 @@
 ﻿using System;
 using custom_array;
+using custom_array.NegativeNumberDeleter;
+using custom_array.SymbolChecker;
 
 namespace lab2_part1 {
 
@@ -40,7 +42,6 @@ namespace lab2_part1 {
             Console.WriteLine(a1>a3);
 
         }
-
     } // Program class end
 
 } // namespace end

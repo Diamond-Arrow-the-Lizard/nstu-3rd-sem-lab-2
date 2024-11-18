@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace custom_array {
 
     public class Array {
@@ -87,30 +86,5 @@ namespace custom_array {
 
 
     } // Array class end
-
-    public static class NegativeNumberDeleter {
-
-        public static Array deleteNegativeValues(this Array arr) {
-                int[] newArray = arr.array;
-                newArray = newArray.Where(val => val >= 0).ToArray();
-                arr.array = newArray;
-                return arr;
-            }
-
-    } // NegativeNumberDeletor extention end
-
-    public static class SymbolChecker {
-
-        public static bool hasSymbol(this Array a, char symbol) {
-            string arrayString = String.Join("", a.array);
-            foreach (char item in arrayString) {
-                if(item == symbol) 
-                    return true;
-            }
-            return false;
-        }
-
-
-    } // SymbolChecker extention end
 
 }
