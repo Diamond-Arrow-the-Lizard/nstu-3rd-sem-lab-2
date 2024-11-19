@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/ArrayClass/ArrayClass.csproj",
+      "projectUniqueName": "/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_1/ArrayClass/ArrayClass.csproj",
       "projectName": "ArrayClass",
-      "projectPath": "/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/ArrayClass/ArrayClass.csproj",
+      "projectPath": "/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_1/ArrayClass/ArrayClass.csproj",
       "packagesPath": "/home/d-arrow/.nuget/packages/",
-      "outputPath": "/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/ArrayClass/obj/",
+      "outputPath": "/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_1/ArrayClass/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/d-arrow/.nuget/NuGet/NuGet.Config"
