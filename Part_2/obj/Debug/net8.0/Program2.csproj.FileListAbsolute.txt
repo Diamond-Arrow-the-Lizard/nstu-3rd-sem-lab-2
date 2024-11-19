@@ -1,0 +1,17 @@
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/bin/Debug/net8.0/Program2
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/bin/Debug/net8.0/Program2.deps.json
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/bin/Debug/net8.0/Program2.runtimeconfig.json
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/bin/Debug/net8.0/Program2.dll
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/bin/Debug/net8.0/Program2.pdb
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/bin/Debug/net8.0/Products.dll
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/bin/Debug/net8.0/Products.pdb
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/obj/Debug/net8.0/Program2.csproj.AssemblyReference.cache
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/obj/Debug/net8.0/Program2.GeneratedMSBuildEditorConfig.editorconfig
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/obj/Debug/net8.0/Program2.csproj.CoreCompileInputs.cache
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/obj/Debug/net8.0/Program2.sourcelink.json
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/obj/Debug/net8.0/Program2.csproj.CopyComplete
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/obj/Debug/net8.0/Program2.dll
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/obj/Debug/net8.0/refint/Program2.dll
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/obj/Debug/net8.0/Program2.pdb
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/obj/Debug/net8.0/Program2.genruntimeconfig.cache
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/obj/Debug/net8.0/ref/Program2.dll

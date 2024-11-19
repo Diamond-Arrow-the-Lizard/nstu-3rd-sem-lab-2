@@ -1,0 +1,10 @@
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/Products/bin/Debug/net8.0/Products.deps.json
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/Products/bin/Debug/net8.0/Products.dll
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/Products/bin/Debug/net8.0/Products.pdb
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/Products/obj/Debug/net8.0/Products.GeneratedMSBuildEditorConfig.editorconfig
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/Products/obj/Debug/net8.0/Products.csproj.CoreCompileInputs.cache
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/Products/obj/Debug/net8.0/Products.sourcelink.json
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/Products/obj/Debug/net8.0/Products.dll
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/Products/obj/Debug/net8.0/refint/Products.dll
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/Products/obj/Debug/net8.0/Products.pdb
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_2/Products/obj/Debug/net8.0/ref/Products.dll
