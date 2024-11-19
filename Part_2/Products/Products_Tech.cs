@@ -35,7 +35,7 @@ public class Tech : Product {
 
     public override string ToString() {
         if (isBroken == true) {
-            return "It's broken!\n";
+            return $"{Name} is broken!\n";
         }
 
         string formattedOutput = $"Product Type: {Type}\nVendor: {Vendor}\nProduct Name: {Name}\nPrice: {Price}";

@@ -19,9 +19,10 @@ namespace lab2_part2 {
 
             Computer coolPC = new Computer() {
                 Vendor = "DNS",
-                CPU = "AMD",
+                Name = "Gaming PC",
+                CPU = "AMD Ryzen",
                 GPU = "AMD Radeon",
-                OS = "Debian 12",
+                OS = "Temple OS",
                 Price = 4300000
             };
 
@@ -40,7 +41,7 @@ namespace lab2_part2 {
             iPad.repairProduct();
             iPad.repairProduct();
 
-            coolPC.breakProduct();
+            scammer.breakProduct();
 
             foreach(var i in techList)
                 Console.WriteLine(i);
