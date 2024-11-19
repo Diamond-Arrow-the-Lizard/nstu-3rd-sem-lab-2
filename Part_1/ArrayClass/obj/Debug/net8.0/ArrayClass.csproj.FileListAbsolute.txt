@@ -18,3 +18,6 @@
 /home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_1/ArrayClass/obj/Debug/net8.0/refint/ArrayClass.dll
 /home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_1/ArrayClass/obj/Debug/net8.0/ArrayClass.pdb
 /home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_1/ArrayClass/obj/Debug/net8.0/ref/ArrayClass.dll
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_1/ArrayClass/bin/Debug/net8.0/ArrayClass.runtimeconfig.json
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_1/ArrayClass/obj/Debug/net8.0/ArrayClass.csproj.AssemblyReference.cache
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_1/ArrayClass/obj/Debug/net8.0/ArrayClass.genruntimeconfig.cache
