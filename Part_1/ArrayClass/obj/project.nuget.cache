@@ -1,9 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "tZLmRsQBVGSIRs0ay7yLJrfMlslnPTXyf5l3iz6pWaaWta14cJtBgoKP2kGJClz+hJtLCPXvs9Vin47MjE75/w==",
+  "dgSpecHash": "6+NAmzu9Rn5hqWaNV2q4Kd7WsLNSBY/VmUngLQZzIWlcVVv2ACfyDKx7vVJWHnteKpwuW0S1pBg/zKBJMP+IBw==",
   "success": true,
   "projectFilePath": "/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_1/ArrayClass/ArrayClass.csproj",
   "expectedPackageFiles": [
+    "/home/d-arrow/.nuget/packages/xunit/2.9.2/xunit.2.9.2.nupkg.sha512",
+    "/home/d-arrow/.nuget/packages/xunit.abstractions/2.0.3/xunit.abstractions.2.0.3.nupkg.sha512",
+    "/home/d-arrow/.nuget/packages/xunit.analyzers/1.16.0/xunit.analyzers.1.16.0.nupkg.sha512",
+    "/home/d-arrow/.nuget/packages/xunit.assert/2.9.2/xunit.assert.2.9.2.nupkg.sha512",
+    "/home/d-arrow/.nuget/packages/xunit.core/2.9.2/xunit.core.2.9.2.nupkg.sha512",
+    "/home/d-arrow/.nuget/packages/xunit.extensibility.core/2.9.2/xunit.extensibility.core.2.9.2.nupkg.sha512",
+    "/home/d-arrow/.nuget/packages/xunit.extensibility.execution/2.9.2/xunit.extensibility.execution.2.9.2.nupkg.sha512",
     "/home/d-arrow/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.10/microsoft.aspnetcore.app.ref.8.0.10.nupkg.sha512"
   ],
   "logs": []
