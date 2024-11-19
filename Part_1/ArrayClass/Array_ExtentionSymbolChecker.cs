@@ -1,10 +1,10 @@
-using custom_array;
+using Custom_Array;
 
-namespace custom_array.SymbolChecker {
+namespace Custom_Array.SymbolChecker {
 
     public static class SymbolChecker {
 
-        public static bool hasSymbol(this Array a, char symbol) {
+        public static bool hasSymbol(this CustomArray a, char symbol) {
             string arrayString = String.Join("", a.array);
             foreach (char item in arrayString) {
                 if(item == symbol) 

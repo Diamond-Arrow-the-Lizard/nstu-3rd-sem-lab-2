@@ -1,10 +1,10 @@
-using custom_array;
+using Custom_Array;
 
-namespace custom_array.NegativeNumberDeleter {
+namespace Custom_Array.NegativeNumberDeleter {
 
         public static class NegativeNumberDeleter {
 
-        public static Array deleteNegativeValues(this Array arr) {
+        public static CustomArray deleteNegativeValues(this CustomArray arr) {
                 int[] newArray = arr.array;
                 newArray = newArray.Where(val => val >= 0).ToArray();
                 arr.array = newArray;

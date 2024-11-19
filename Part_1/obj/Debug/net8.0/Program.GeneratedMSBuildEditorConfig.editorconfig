@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Program
-build_property.ProjectDir = /home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/
+build_property.ProjectDir = /home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_1/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

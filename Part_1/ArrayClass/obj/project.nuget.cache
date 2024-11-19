@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UKZoZ+cpj4fMj0EiY1epVi2+eWYJ6xjrrMcqRdwmBBLvdKPVpquEcygknS/qptawPewdgH6p5QUpVQ6WOYpSrg==",
+  "dgSpecHash": "tZLmRsQBVGSIRs0ay7yLJrfMlslnPTXyf5l3iz6pWaaWta14cJtBgoKP2kGJClz+hJtLCPXvs9Vin47MjE75/w==",
   "success": true,
-  "projectFilePath": "/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/ArrayClass/ArrayClass.csproj",
+  "projectFilePath": "/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_1/ArrayClass/ArrayClass.csproj",
   "expectedPackageFiles": [
     "/home/d-arrow/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.10/microsoft.aspnetcore.app.ref.8.0.10.nupkg.sha512"
   ],

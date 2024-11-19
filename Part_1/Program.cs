@@ -1,7 +1,7 @@
 ﻿using System;
-using custom_array;
-using custom_array.NegativeNumberDeleter;
-using custom_array.SymbolChecker;
+using Custom_Array;
+using Custom_Array.NegativeNumberDeleter;
+using Custom_Array.SymbolChecker;
 
 namespace lab2_part1 {
 
@@ -9,15 +9,15 @@ namespace lab2_part1 {
 
         public static void Main(string[] args) {
 
-            Array a1 = new Array();
+            CustomArray a1 = new CustomArray();
 
-            Array a2 = new Array();
+            CustomArray a2 = new CustomArray();
             a2.array = new int[]{1, 2, 3, 4, 5};
 
-            Array a3 = new Array();
+            CustomArray a3 = new CustomArray();
             a3.array = new int[]{-2, 3, 4, -5, 6};
 
-            Array a4 = new Array();
+            CustomArray a4 = new CustomArray();
             a4.array = new int[]{1, 2, 3, 4, 5};
             a3.array = new int[]{-2, 3, -4, 5, 6};
 

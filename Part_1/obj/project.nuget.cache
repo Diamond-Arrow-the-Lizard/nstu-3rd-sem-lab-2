@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tDsKGuYge7B0uAS15LE4BoKMeTKDfTsxRqPOLPu8eiIDMgLus3wkDttk+aEKcV/1vAF8RKeqriCQfjUyXpQKdg==",
+  "dgSpecHash": "AIrY4q+CIEG54zhMS7B77+vVJFsqPyREfRy2/d1IFB+VUpu5Fxy9LeMC9jz2ZA7Y+whBqgy7imOladWaexomyA==",
   "success": true,
-  "projectFilePath": "/home/d-arrow/programming/nstu-3rd-sem-lab-2/Program/Program.csproj",
+  "projectFilePath": "/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_1/Program.csproj",
   "expectedPackageFiles": [
     "/home/d-arrow/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.10/microsoft.aspnetcore.app.ref.8.0.10.nupkg.sha512"
   ],
