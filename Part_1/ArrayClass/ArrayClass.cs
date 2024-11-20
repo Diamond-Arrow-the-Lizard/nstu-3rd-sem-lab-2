@@ -1,4 +1,5 @@
-﻿
+﻿using System;
+
 namespace Custom_Array {
 
     public class CustomArray {
@@ -18,13 +19,26 @@ namespace Custom_Array {
             _array = new int[] {0};
         }
 
+        public override int GetHashCode() {
+            return HashCode.Combine(this.array);
+        }
+
+        public string getAsString() {
+            return Convert.ToString(this.array);
+        }
+
         public static CustomArray operator *(CustomArray a, CustomArray b) {
-            CustomArray c = new CustomArray();
-            c.array = new int[a.array.Length];
-            for(int i = 0; i < a.array.Length; i++) {
-                c.array[i] = a.array[i];
+            if(a.array == null || b.array == null) {
+                Console.WriteLine("ERROR: Array null value met. Returning null.");
+                    return null;
             }
-            for (int i = 0;  i < a.array.Length; i++) { 
+
+            CustomArray c = a;
+            if (a.array.Length != b.array.Length) {
+                Console.WriteLine("WARNING: Arrays' lengths do not match.");
+            }
+            int ArrayLength = Math.Max(a.array.Length, b.array.Length);
+            for (int i = 0;  i < ArrayLength; i++) { 
                 c.array[i] = a.array[i] * b.array[i];
             }            
             return c;
@@ -32,33 +46,31 @@ namespace Custom_Array {
         }
 
         public static bool operator !=(CustomArray a, CustomArray b) {
-            if(a.array.Length != b.array.Length) return true;
-            
-            for(int i = 0; i < a.array.Length; i++) {
-                if(a.array[i] != b.array[i]) return true;
-            }
-
-            return false;
+            if(a.GetHashCode() != b.GetHashCode()) return true;
+            else if (a.array.Length != b.array.Length) return true;
+            else return false;
         }
 
         public static bool operator ==(CustomArray a, CustomArray b) {
-            if(a.array.Length != b.array.Length) return false;
-            
-            for(int i = 0; i < a.array.Length; i++) {
-                if(a.array[i] != b.array[i]) return false;
-            }
+            if(a.GetHashCode() == b.GetHashCode()) return true;
+            else if (a.array.Length == b.array.Length) return true;
+            else return false;
+        }
 
-            return true;
+        public bool Equals(CustomArray b) {
+            if(this.GetHashCode() == b.GetHashCode()) return true;
+            else if (this.array.Length == b.array.Length) return true;
+            else return false;
         }
 
         public static bool operator <(CustomArray a, CustomArray b) {
             if(a.array.Length < b.array.Length) return true;
-            return false;
+            else return false;
         }
 
         public static bool operator >(CustomArray a, CustomArray b) {
             if(a.array.Length > b.array.Length) return true;
-            return false;
+            else return false;
         }
 
         public static bool operator false(CustomArray a) {
@@ -79,11 +91,9 @@ namespace Custom_Array {
             return true;
         }
 
-        
         public static explicit operator int(CustomArray a) {
             return a.array.Length;
         }
-
 
     } // CustomArray class end
 

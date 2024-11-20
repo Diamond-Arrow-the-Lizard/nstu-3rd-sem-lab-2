@@ -24,8 +24,9 @@ namespace lab2_part1 {
             a1 = a2*a3; 
 
             foreach (var item in a1.array) {
-                Console.WriteLine(item);
+                Console.Write(item + " ");
             }
+            Console.WriteLine();
 
             Console.WriteLine(a1.hasSymbol('6'));
             Console.WriteLine(a1.hasSymbol('4'));
@@ -33,13 +34,16 @@ namespace lab2_part1 {
             a1.deleteNegativeValues();
 
             foreach (var item in a1.array) {
-                Console.WriteLine(item);
+                Console.Write(item + " ");
             }
+            Console.WriteLine();
 
             Console.WriteLine("Array size: " + (int)a1);
             Console.WriteLine(a2==a4);
             Console.WriteLine(a2==a3);
+            Console.WriteLine(a2.Equals(a1));
             Console.WriteLine(a1>a3);
+            Console.WriteLine(a1.GetHashCode());
 
         }
     } // Program class end

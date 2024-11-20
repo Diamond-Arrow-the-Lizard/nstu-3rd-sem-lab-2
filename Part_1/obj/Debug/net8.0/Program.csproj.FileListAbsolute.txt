@@ -32,3 +32,7 @@
 /home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_1/obj/Debug/net8.0/Program.pdb
 /home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_1/obj/Debug/net8.0/Program.genruntimeconfig.cache
 /home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_1/obj/Debug/net8.0/ref/Program.dll
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_1/bin/Debug/net8.0/xunit.abstractions.dll
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_1/bin/Debug/net8.0/xunit.assert.dll
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_1/bin/Debug/net8.0/xunit.core.dll
+/home/d-arrow/programming/nstu-3rd-sem-lab-2/Part_1/bin/Debug/net8.0/xunit.execution.dotnet.dll
