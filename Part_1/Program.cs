@@ -43,7 +43,6 @@ namespace lab2_part1 {
             Console.WriteLine("Array size: " + (int)a1);
             Console.WriteLine(a2==a4);
             Console.WriteLine(a2==a3);
-            Console.WriteLine(a2.Equals(a1));
             Console.WriteLine(a1>a3);
             Console.WriteLine(a1.GetHashCode());
 
