@@ -6,7 +6,6 @@ namespace Custom_Array.SymbolChecker {
 
         public static bool hasSymbol(this CustomArray a, char symbol) {
             string arrayString = a.getAsString();
-            Console.WriteLine(arrayString);
             foreach (char item in arrayString) {
                 if(item == symbol) 
                     return true;
