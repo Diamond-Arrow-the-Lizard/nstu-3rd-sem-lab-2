@@ -64,8 +64,7 @@ namespace Custom_Array {
         }
 
         public static bool operator <(CustomArray a, CustomArray b) {
-            if(a.array.Length < b.array.Length) return true;
-            else return false;
+            return a.array.Length < b.array.Length;
         }
 
         public static bool operator >(CustomArray a, CustomArray b) {

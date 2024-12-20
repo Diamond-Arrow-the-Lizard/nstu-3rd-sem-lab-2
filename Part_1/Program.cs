@@ -21,7 +21,9 @@ namespace lab2_part1 {
             a4.array = new int[]{1, 2, 3, 4, 5};
             a3.array = new int[]{-2, 3, -4, 5, 6};
 
+            Console.WriteLine(a1.array[0]);
             a1 = a2*a3; 
+            Console.WriteLine(a1.array[0]);
 
             foreach (var item in a1.array) {
                 Console.Write(item + " ");
