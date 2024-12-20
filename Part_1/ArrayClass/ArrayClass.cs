@@ -24,7 +24,11 @@ namespace Custom_Array {
         }
 
         public string getAsString() {
-            return Convert.ToString(this.array);
+            string ArrayString = "";
+            foreach(var i in this.array) {
+                ArrayString += Convert.ToString(i);
+            }
+            return ArrayString;
         }
 
         public static CustomArray operator *(CustomArray a, CustomArray b) {
